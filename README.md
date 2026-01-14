@@ -2,6 +2,8 @@
 
 A modern React-based frontend for a freelance marketplace platform.
 
+## Get the GigFlow Backend at : ![GigFlow-Backend](https://github.com/Ayusman-Singhal/GigFlow-backend.git)
+
 ## 🚀 Tech Stack
 - React 19 + Vite
 - Tailwind CSS
