@@ -1,16 +1,64 @@
-# React + Vite
+# GigFlow Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based frontend for a freelance marketplace platform.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
+- React 19 + Vite
+- Tailwind CSS
+- Redux Toolkit (State management)
+- React Router
+- Clerk React (Authentication)
+- Socket.io-client (Real-time notifications)
+- Axios (API calls)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Key Features
+- ✅ User authentication (Clerk)
+- ✅ Browse and search gigs
+- ✅ Post new gigs
+- ✅ Submit and manage bids
+- ✅ **Hire freelancers with transaction safety**
+- ✅ **Real-time notification system with badge**
+- ✅ Notification history with localStorage persistence
+- ✅ Responsive design
 
-## React Compiler
+## 🔧 Setup Instructions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Copy `.env.example` to `.env`
+4. Fill in your environment variables
+5. Run: `npm run dev`
 
-## Expanding the ESLint configuration
+## 🌍 Environment Variables
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+See `.env.example`:
+- `VITE_API_BASE_URL` - Backend API URL
+- `VITE_CLERK_PUBLISHABLE_KEY` - Clerk public key
+
+## 🔔 Notification System
+
+The app includes a complete notification system:
+- Real-time notifications via Socket.io
+- Notification bell with unread count
+- Persistent notification history
+- Browser push notifications
+- Click to navigate to relevant page
+
+## 📁 Project Structure
+```
+src/
+├── components/    # Reusable UI components
+├── pages/         # Page components
+├── hooks/         # Custom hooks (socket, auth, API)
+├── store/         # Redux store & slices
+├── services/      # API client
+└── config/        # Environment config
+```
+
+## 🏆 Bonus Features Implemented
+
+### Real-time Notifications (Bonus 2)
+- Socket.io connection on login
+- Instant "You Got Hired!" notifications
+- No refresh required
+- Notification history persists in localStorage
